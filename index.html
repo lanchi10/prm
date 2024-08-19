@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>המדריך המקיף והמרהיב לכתיבת Prompt במחקר</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Heebo', sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ecf0f1;
+            background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        }
+        h1, h2, h3 {
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2.8em;
+            text-align: center;
+            border-bottom: 5px solid #3498db;
+            padding-bottom: 15px;
+            animation: fadeIn 1.5s ease-in-out;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-size: 2em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .section {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+        ul {
+            padding-right: 30px;
+        }
+        li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+        li::before {
+            content: '✦';
+            color: #3498db;
+            position: absolute;
+            right: -25px;
+        }
+        .tip, .medical, .ai-model, .technique {
+            border-right: 5px solid;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 0 15px 15px 0;
+            transition: all 0.3s ease;
+        }
+        .tip {
+            background-color: #e8f8f5;
+            border-color: #2ecc71;
+        }
+        .medical {
+            background-color: #edf2fa;
+            border-color: #5dade2;
+        }
+        .ai-model {
+            background-color: #fef9e7;
+            border-color: #f5b041;
+        }
+        .tip:hover, .medical:hover, .ai-model:hover, .technique:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateX(-5px);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .new-section {
+            background-color: #e8f6f3;
+            border: 2px dashed #1abc9c;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 15px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(26, 188, 156, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(26, 188, 156, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(26, 188, 156, 0); }
+        }
+        .advanced-section {
+            background-color: #e3f2fd;
+            border: 2px solid #2196f3;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 15px;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 5px #2196f3; }
+            to { box-shadow: 0 0 20px #2196f3; }
+        }
+        .technique {
+            background-color: #fff;
+            border-left: 5px solid #2196f3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        .intro {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #34495e;
+        }
+        .highlight {
+            background-color: #fffde7;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>המדריך המקיף והמרהיב לכתיבת Prompt במחקר</h1>
+    
+    <div class="intro">
+        <p>ברוכים הבאים למדריך המתקדם ביותר לכתיבת Prompts עבור מודלי בינה מלאכותית. גלו כיצד ליצור שאילתות חכמות, מדויקות ואפקטיביות שיעזרו לכם להפיק את המיטב ממודלי ה-AI המתקדמים ביותר.</p>
+    </div>
+
+    <div class="section">
+        <h2>חלק א: מודלים כלליים לכתיבת Prompt</h2>
+        <h3>1. מודל CRISPE</h3>
+        <ul>
+            <li><strong>C</strong>apacity: הגדר את התפקיד או היכולת של ה-AI</li>
+            <li><strong>R</strong>ole: תן ל-AI תפקיד ספציפי</li>
+            <li><strong>I</strong>nput: ספק את המידע או ההקשר הנדרש</li>
+            <li><strong>S</strong>teps: פרט את השלבים לביצוע המשימה</li>
+            <li><strong>P</strong>ersonality: הגדר את הטון או הסגנון הרצוי</li>
+            <li><strong>E</strong>xpected Output: תאר את התוצאה הרצויה</li>
+        </ul>
+        <div class="tip">
+            <strong>טיפ:</strong> השתמש במודל זה כאשר אתה זקוק לתשובה מפורטת ומובנית בהקשר רפואי או מחקרי מורכב.
+        </div>
+
+        <h3>2. מודל CARE</h3>
+        <ul>
+            <li><strong>C</strong>ontext: ספק רקע והקשר למשימה</li>
+            <li><strong>A</strong>ction: הגדר את הפעולה הספציפית שברצונך שה-AI יבצע</li>
+            <li><strong>R</strong>esult: תאר את התוצאה הרצויה</li>
+            <li><strong>E</strong>xtra Details: הוסף מידע נוסף או הגבלות</li>
+        </ul>
+        <div class="tip">
+            <strong>טיפ:</strong> מודל זה מצוין למשימות ממוקדות עם תוצאות ברורות במחקר רפואי או מדעי.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>חלק ב: מודלים ייעודיים למחקר רפואי</h2>
+        <h3>3. מודל PICO</h3>
+        <ul>
+            <li><strong>P</strong>opulation/Patient/Problem: אוכלוסייה/מטופל/בעיה</li>
+            <li><strong>I</strong>ntervention: התערבות</li>
+            <li><strong>C</strong>omparison: השוואה</li>
+            <li><strong>O</strong>utcome: תוצאה</li>
+        </ul>
+        <div class="medical">
+            <strong>טיפ רפואי:</strong> מודל זה מצוין לניסוח שאלות מחקר קליניות ולחיפוש ספרות רפואית מבוססת ראיות.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>חלק ג: מודלים מתקדמים של בינה מלאכותית לעיבוד שפה טבעית</h2>
+        <h3>4. GPT-4 (OpenAI)</h3>
+        <div class="ai-model">
+            <strong>מבנה ההוראות:</strong>
+            <ul>
+                <li>ציון פרטי המשימה במדויק, כולל סגנון, רמת פורמליות, וכוונת התוכן.</li>
+                <li>אפשרות להזין משפטי פתיחה או רעיונות ראשוניים למודל לפתח מהם את הטקסט.</li>
+                <li>פקודה מפורשת במידת הצורך להפעלת פונקציונליות מיוחדת (לדוגמה, כתיבה בגוף ראשון, שני, וכו').</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section new-section">
+        <h2>חלק ד: טכניקות מתקדמות לשיפור ה-Prompt</h2>
+        <h3>5. טכניקת "Chain-of-Thought"</h3>
+        <ul>
+            <li>עודד את ה-AI לחשוב בשלבים לוגיים</li>
+            <li>בקש הסברים מפורטים לכל שלב בתהליך החשיבה</li>
+            <li>שימושי במיוחד לבעיות מורכבות או רב-שלביות</li>
+        </ul>
+        <div class="tip">
+            <strong>טיפ:</strong> טכניקה זו מסייעת לקבל תוצאות מדויקות יותר ומאפשרת הבנה עמוקה יותר של תהליך החשיבה של ה-AI.
+        </div>
+
+        <h3>6. שימוש ב-"Few-Shot Learning"</h3>
+        <ul>
+            <li>ספק מספר דוגמאות של שאלות ותשובות רצויות</li>
+            <li>הדגם את הפורמט והסגנון הרצויים</li>
+            <li>עזור ל-AI ללמוד מהדוגמאות ולהעביר את הידע למשימה הנוכחית</li>
+        </ul>
+        <div class="tip">
+            <strong>טיפ:</strong> שיטה זו יעילה במיוחד כאשר אתה מחפש תשובות בפורמט או סגנון ספציפי.
+        </div>
+    </div>
+
+    <div class="section advanced-section">
+        <h2>חלק ה: טכניקות מתקדמות ליצירת PROMPT מנצח</h2>
+        
+        <div class="technique">
+            <h3>7. הנחיה עצמית (Self-Instruct)</h3>
+            <p>בקש מה-AI לייצר דוגמאות או הנחיות לעצמו לפני ביצוע המשימה העיקרית. זה יכול לשפר את הדיוק והרלוונטיות של התשובות.</p>
+            <strong>דוגמה:</strong> <span class="highlight">"לפני שתענה על השאלה העיקרית, אנא צור 3 דוגמאות של שאלות ותשובות בנושא זה."</span>
+        </div>
+
+        <div class="technique">
+            <h3>8. שימוש ב-Meta Language</h3>
+            <p>השתמש בשפה שמתארת את המבנה או הפורמט הרצוי של התשובה.</p>
+            <strong>דוגמה:</strong> <span class="highlight">"תן לי תשובה בפורמט הבא: [הגדרה], [3 דוגמאות], [יישום מעשי]."</span>
+        </div>
+
+        <div class="technique">
+            <h3>9. טכניקת ה-Persona</h3>
+            <p>בקש מה-AI לקבל על עצמו תפקיד או אישיות ספציפית בעת מתן התשובה.</p>
+            <strong>דוגמה:</strong> <span class="highlight">"ענה על השאלה הבאה כאילו אתה מדען בכיר בתחום הגנטיקה."</span>
+        </div>
+
+        <div class="technique">
+            <h3>10. שימוש ב-Constrained Output</h3>
+            <p>הגדר מגבלות ספציפיות על התשובה כדי לקבל תוצאות ממוקדות יותר.</p>
+            <strong>דוגמה:</strong> 
+
+Version 3 of 3
+
+
+
